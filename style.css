@@ -1,4 +1,12 @@
-/* RESET */
+/* RESET + BASE */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -15,6 +23,10 @@ nav {
   background: #020617;
 }
 
+nav h2 {
+  margin: 0;
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -26,6 +38,7 @@ nav ul {
 nav a {
   text-decoration: none;
   color: white;
+  font-weight: bold;
 }
 
 nav a:hover {
@@ -41,25 +54,27 @@ header {
 .profile {
   width: 120px;
   border-radius: 50%;
+  margin-bottom: 15px;
 }
 
-/* SECTIONS (FIXED CENTERING + NO OVERFLOW) */
+/* SECTIONS */
 section {
   max-width: 800px;
   margin: 30px auto;
   padding: 20px;
   background: #1e293b;
   border-radius: 10px;
-  box-sizing: border-box;
 }
 
 /* HEADINGS */
 h1 {
   color: #38bdf8;
+  margin-bottom: 10px;
 }
 
 h2 {
   color: #facc15;
+  margin-bottom: 10px;
 }
 
 /* LIST */
@@ -73,16 +88,50 @@ ul {
   padding: 15px;
   border-radius: 8px;
   margin-top: 10px;
-  word-wrap: break-word;
-}
-
-/* HOVER EFFECT */
-.project:hover {
-  transform: scale(1.03);
   transition: 0.3s;
 }
 
-/* LINK */
+.project:hover {
+  transform: scale(1.03);
+}
+
+/* LINKS */
 a {
   color: #38bdf8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  section {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }
