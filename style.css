@@ -44,6 +44,24 @@ header {
   border-radius: 50%;
 }
 
+/* SOCIAL ICONS */
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 35px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
 /* SECTIONS */
 section {
   max-width: 800px;
@@ -96,7 +114,7 @@ ul {
   text-decoration: underline;
 }
 
-/* LINKEDIN */
+/* LINKEDIN CONTACT */
 .linkedin-link {
   display: inline-flex;
   align-items: center;
