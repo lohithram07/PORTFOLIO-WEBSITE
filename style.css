@@ -1,3 +1,11 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: white;
+}
+
+/* NAVBAR */
 nav {
   display: flex;
   justify-content: space-between;
@@ -20,13 +28,45 @@ nav a:hover {
   color: #38bdf8;
 }
 
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px;
+}
+
 .profile {
   width: 120px;
   border-radius: 50%;
-  margin-top: 20px;
 }
 
+/* SECTIONS */
+section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+/* HEADINGS */
+h1 {
+  color: #38bdf8;
+}
+
+h2 {
+  color: #facc15;
+}
+
+/* PROJECT CARD */
+.project {
+  background: #020617;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* HOVER EFFECT */
 .project:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   transition: 0.3s;
 }
