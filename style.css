@@ -1,6 +1,7 @@
+/* RESET */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: Arial, sans-serif;
   background: linear-gradient(to right, #0f172a, #1e293b);
   color: white;
 }
@@ -9,6 +10,7 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px 30px;
   background: #020617;
 }
@@ -17,6 +19,8 @@ nav ul {
   display: flex;
   list-style: none;
   gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
@@ -31,7 +35,7 @@ nav a:hover {
 /* HEADER */
 header {
   text-align: center;
-  padding: 40px;
+  padding: 40px 20px;
 }
 
 .profile {
@@ -39,13 +43,14 @@ header {
   border-radius: 50%;
 }
 
-/* SECTIONS */
+/* SECTIONS (FIXED CENTERING + NO OVERFLOW) */
 section {
   max-width: 800px;
   margin: 30px auto;
   padding: 20px;
   background: #1e293b;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 /* HEADINGS */
@@ -57,16 +62,27 @@ h2 {
   color: #facc15;
 }
 
+/* LIST */
+ul {
+  padding-left: 20px;
+}
+
 /* PROJECT CARD */
 .project {
   background: #020617;
   padding: 15px;
   border-radius: 8px;
   margin-top: 10px;
+  word-wrap: break-word;
 }
 
 /* HOVER EFFECT */
 .project:hover {
   transform: scale(1.03);
   transition: 0.3s;
+}
+
+/* LINK */
+a {
+  color: #38bdf8;
 }
