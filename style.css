@@ -44,26 +44,6 @@ header {
   border-radius: 50%;
 }
 
-/* LINKEDIN ICON */
-.linkedin img {
-  width: 35px;
-  margin-top: 10px;
-  transition: 0.3s;
-}
-
-.linkedin img:hover {
-  transform: scale(1.2);
-}
-
-/* LINKEDIN TEXT */
-.linkedin {
-  display: inline-block;
-  margin-top: 10px;
-  color: #38bdf8;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 /* SECTIONS */
 section {
   max-width: 800px;
@@ -102,7 +82,7 @@ ul {
   transform: scale(1.03);
 }
 
-/* LINKS */
+/* PROJECT LINKS */
 .project a {
   display: inline-block;
   margin-top: 10px;
@@ -113,6 +93,25 @@ ul {
 }
 
 .project a:hover {
+  text-decoration: underline;
+}
+
+/* LINKEDIN */
+.linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.linkedin-link img {
+  width: 20px;
+}
+
+.linkedin-link:hover {
   text-decoration: underline;
 }
 
